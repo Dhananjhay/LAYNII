@@ -1,8 +1,9 @@
 # LayNii makefile
 
-CC		= $(CXX)
-CFLAGS	= -std=c++11 -DHAVE_ZLIB
-LFLAGS	= -lm -lz
+CC      = $(CXX)
+CFLAGS  = $(CPPFLAGS) -std=c++11 -DHAVE_ZLIB
+LFLAGS  = $(LDFLAGS) -lm -lz
+
 # CFLAGS	= -std=c++11 -pedantic -DHAVE_ZLIB -lm -lz
 
 # =============================================================================
